@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "GameEvent", menuName = "Game Event")]
+[CreateAssetMenu(fileName = "NewGameEvent", menuName = "Game Event")]
 public class GameEvent : ScriptableObject
 {
     private List<GameEventListener> listeners = new List<GameEventListener>();  // A list of GameEventListeners that will subscribe to your GameEvent
@@ -15,12 +15,14 @@ public class GameEvent : ScriptableObject
             listeners[i].OnEventRaised();
         }
     }
+
     // Allow GameEventListeners to subscribe to this GameEvent
     public void RegisterListener(GameEventListener listener)
     {
         if (!listeners.Contains(listener))
             listeners.Add(listener);
     }
+
     // Allow GameEventListeners to unsubscribe to this GameEvent
     public void UnregisterListener(GameEventListener listener)  
     {
