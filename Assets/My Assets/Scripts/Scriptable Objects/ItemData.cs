@@ -16,6 +16,8 @@ public class ItemData : ScriptableObject
 	[SerializeField]
 	private Sprite previewImage;
 
+	public AudioClip PickupClip;
+
 
 	//[Tooltip("The type of item")]
 	//[SerializeField]
