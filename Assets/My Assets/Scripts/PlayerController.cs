@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour
                 Vector3 pointToLook = camRay.GetPoint(hit.distance);
                 Debug.DrawLine(camRay.origin, pointToLook, Color.blue);
                 transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
-                navMeshAgent.SetDestination(hit.point);
             }
 
         }

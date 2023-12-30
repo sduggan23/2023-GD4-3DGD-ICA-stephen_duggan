@@ -11,7 +11,7 @@ public class GameEventListener : MonoBehaviour
     private GameEvent Event;        // GameEvent this GameEventListener will subscribe to
 
     [SerializeField]
-    private UnityEvent Response;    // UnityEvent response that will be invoked when the GameEvent raises this GameEventListener
+    private UnityEvent UnityEventResponse;    // UnityEvent response that will be invoked when the GameEvent raises this GameEventListener
 
     // Register the GameEvent to the GameEventListener when this GameObject is enabled
     private void OnEnable() => Event.RegisterListener(this);
@@ -19,5 +19,5 @@ public class GameEventListener : MonoBehaviour
     // Unregister the GameEvent from the GameEventListener when this GameObject is disabled
     private void OnDisable() => Event.UnregisterListener(this);
     // Call when a GameEvent is raised causing the GameEventListener to invoke the UnityEvent
-    public virtual void OnEventRaised() => Response?.Invoke();
+    public virtual void OnEventRaised() => UnityEventResponse.Invoke();
 }
