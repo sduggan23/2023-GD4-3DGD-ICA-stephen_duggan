@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d43bc6e683735408ac3b1014942c84, type: 3}
   m_Name: HighlightSelectionResponseSO
   m_EditorClassIdentifier: 
-  selectedMaterial: {fileID: 0}
+  selectedMaterial: {fileID: 2100000, guid: b2cc16dd1db9c4b4f8c847367bd3f701, type: 2}

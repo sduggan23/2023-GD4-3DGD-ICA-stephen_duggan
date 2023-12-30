@@ -5,8 +5,6 @@ namespace GD.Selection
 {
     /// <summary>
     /// Sets a highlight material (based on a user-defined material) on selection of an appropriate game object
-    /// SO versions of the ISelectResponse classes that previously were implemented as MonoBehaviours
-    /// This allows us to drag and drop multiple selection responses into a List<ISelectResponse> in the AdvancedSelectionManager
     /// </summary>
     [CreateAssetMenu(fileName = "HighlightSelectionResponseSO", menuName = "Responses/Highlight")]
     [Serializable]
