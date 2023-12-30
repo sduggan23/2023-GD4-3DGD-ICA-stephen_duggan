@@ -8,10 +8,10 @@ public class GameEventListener : MonoBehaviour
 
     [SerializeField]
     [Tooltip("Specify the game event (scriptable object) which will raise the event")]
-    private GameEvent Event;        // GameEvent this GameEventListener will subscribe to
+    private GameEvent Event;
 
     [SerializeField]
-    private UnityEvent Response;    // UnityEvent response that will be invoked when the GameEvent raises this GameEventListener
+    private UnityEvent Response;
 
     private void OnEnable() => Event.RegisterListener(this);
 
