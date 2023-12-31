@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaca43acc56d345409ee1368eda477d6, type: 3}
   m_Name: Grass
   m_EditorClassIdentifier: 
-  name: Grass
-  description: Item harvested from Grass Tufts
-  previewImage: {fileID: 21300000, guid: 46afbb83a47848444bb0cb35c79f5b88, type: 3}
+  itemName: 
+  itemDescription: 
+  icon: {fileID: 21300000, guid: 46afbb83a47848444bb0cb35c79f5b88, type: 3}
+  Value: 0
+  PickupClip: {fileID: 0}
