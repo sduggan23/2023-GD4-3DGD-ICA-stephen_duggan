@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "NewItemData", menuName = "Item Data")]
 public class ItemData : ScriptableObject
@@ -16,7 +17,7 @@ public class ItemData : ScriptableObject
 
 	[Tooltip("A preview image for the item")]
 	[PreviewField(50, Alignment = ObjectFieldAlignment.Left)]
-	[SerializeField] private Sprite previewImage;
+	[SerializeField] private Sprite icon;
 
 	[Min(-1000)]
 	public int Value;
@@ -34,7 +35,7 @@ public class ItemData : ScriptableObject
 	//private GameObject _prefab = default;
 
 	public string Name => itemName;
-	public Sprite PreviewImage => previewImage;
+	public Sprite Icon => icon;
 	public string Description => itemDescription;
 	//public ItemType ItemType => itemType;
 	//public GameObject Prefab => prefab;

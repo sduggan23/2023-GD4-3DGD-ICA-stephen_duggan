@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaca43acc56d345409ee1368eda477d6, type: 3}
-  m_Name: NewItemData
+  m_Script: {fileID: 11500000, guid: aa9c25b8a0baef04d817175c5980ccf3, type: 3}
+  m_Name: TeleportResponseSO
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  previewImage: {fileID: 0}

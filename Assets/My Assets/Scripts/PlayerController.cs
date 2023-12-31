@@ -3,20 +3,20 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Camera cam;
+    private Camera cam;
     [SerializeField] private Animator animator;
-    private NavMeshAgent navMeshAgent;
+    [SerializeField] private NavMeshAgent navMeshAgent;
 
     void Start()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
         cam = Camera.main;
         animator.GetComponent<Animator>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
