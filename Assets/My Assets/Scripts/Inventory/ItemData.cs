@@ -8,12 +8,12 @@ public class ItemData : ScriptableObject
 {
 	[Tooltip("The name of the item")]
 	[SerializeField]
-	private string itemName;
+	public string itemName;
 
 	[Tooltip("A description of the item")]
 	[SerializeField]
 	[Multiline]
-	private string itemDescription = default;
+	public string itemDescription = default;
 
 	[Tooltip("A preview image for the item")]
 	[PreviewField(50, Alignment = ObjectFieldAlignment.Left)]
@@ -34,9 +34,9 @@ public class ItemData : ScriptableObject
 	//[SerializeField]
 	//private GameObject _prefab = default;
 
-	public string Name => itemName;
-	public Sprite Icon => icon;
-	public string Description => itemDescription;
+	//public string Name => itemName;
+	//public Sprite Icon => icon;
+	//public string Description => itemDescription;
 	//public ItemType ItemType => itemType;
 	//public GameObject Prefab => prefab;
 

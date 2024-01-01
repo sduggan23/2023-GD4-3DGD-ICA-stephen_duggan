@@ -22,7 +22,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 677be2ce-aa00-4825-8a09-078062bc5c8a
-  LastUpdated: 31/12/23 17:01:46
+  LastUpdated: 01/01/24 14:57:56
   LastUpdatedBy: 
   Notes: 
-  Description: 
+  Description: This event is raised when we collide with an item

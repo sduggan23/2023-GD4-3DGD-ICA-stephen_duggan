@@ -9,7 +9,7 @@ public class ItemUI : MonoBehaviour
 
     public void UpdateDisplayUI(ItemData itemData)
     {
-        itemIcon.sprite = itemData.Icon;
+        //itemIcon.sprite = itemData.Icon;
     }
 
 }
