@@ -18,7 +18,7 @@ public class InventoryManager : MonoBehaviour
         else
         {
             inventory.Contents.Add(item, 1);
-            Debug.Log("new item added");
+            Debug.Log("New item added");
         }
     }
 }

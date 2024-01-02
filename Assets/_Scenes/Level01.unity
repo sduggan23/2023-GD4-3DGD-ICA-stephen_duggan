@@ -36957,7 +36957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 113364, guid: dac2afd5e1dda1c4d9fe05cf141b47f0, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player - Fionn
       objectReference: {fileID: 0}
     - target: {fileID: 113364, guid: dac2afd5e1dda1c4d9fe05cf141b47f0, type: 3}
       propertyPath: m_IsActive
@@ -44582,7 +44582,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 171706, guid: 0925457c2b2fe9f4a8747c59013d56d4, type: 3}
       propertyPath: m_Name
-      value: Character_Peasant_White
+      value: NPC - Finegas
       objectReference: {fileID: 0}
     - target: {fileID: 171706, guid: 0925457c2b2fe9f4a8747c59013d56d4, type: 3}
       propertyPath: m_IsActive
@@ -55034,9 +55034,9 @@ SceneRoots:
   - {fileID: 1222592862}
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 1011515308}
   - {fileID: 5792687642539424139}
   - {fileID: 7157240110397322220}
+  - {fileID: 1011515308}
   - {fileID: 1190696024}
   - {fileID: 5952676941994461348}
   - {fileID: 1047889077}

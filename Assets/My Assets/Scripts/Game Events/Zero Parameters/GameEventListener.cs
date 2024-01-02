@@ -4,14 +4,14 @@ using UnityEngine.Events;
 public class GameEventListener : MonoBehaviour
 {
     [SerializeField]
-    private string description;
+    protected string description;
 
     [SerializeField]
     [Tooltip("Specify the game event (scriptable object) which will raise the event")]
-    private GameEvent Event;
+    protected GameEvent Event;
 
     [SerializeField]
-    private UnityEvent Response;
+    protected UnityEvent Response;
 
     private void OnEnable() => Event.RegisterListener(this);
 
