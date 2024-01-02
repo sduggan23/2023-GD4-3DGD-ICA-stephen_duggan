@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemDataGameEvent", menuName = "Events/Item Data")]
+[CreateAssetMenu(fileName = "NewItemDataGameEvent", menuName = "Events/Item Data Game Event")]
 public class ItemDataGameEvent : BaseGameEvent<ItemData>
 {
 }

@@ -2,7 +2,7 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Inventory", menuName = "Inventory")]
+[CreateAssetMenu(fileName = "NewInventory", menuName = "Inventory")]
 public class Inventory : SerializedScriptableObject
 {
     public Dictionary<ItemData, int> Contents;

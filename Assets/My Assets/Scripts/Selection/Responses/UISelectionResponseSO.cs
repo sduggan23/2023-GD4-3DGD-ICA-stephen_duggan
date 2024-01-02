@@ -52,6 +52,11 @@ namespace GD.Selection
                     currentTargetInstance.SetActive(true);
                 }
             }
+            if (currentTargetInstance == null)
+            {
+                targetSelectionPrefab.SetActive(false);
+            }
+
         }
 
         public void OnDeselect(Transform selection)
