@@ -5,26 +5,34 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField]
-    private GameEvent itemObject;
-    private bool isSelected;
+    [SerializeField] private GameEvent itemObject;
+    private bool isInRange;
 
-    public void ItemEvent()
+    private void OnTriggerEnter(Collider other)
     {
-        //itemObject.Raise();
-        //isSelected = true;
-        //Vector3 pos = transform.position;
-        //pos.y = 10f;
-        //transform.position = pos;
-        //Debug.Log(" Event Raised");
+        if (other.gameObject.CompareTag("Player"))
+        {
+            isInRange = true;
+        }
     }
-    public void OnTriggerEnter(Collider collision)
+
+    private void OnTriggerExit(Collider other)
     {
-        //isSelected = true;
-        //Vector3 pos = transform.position;
-        //pos.y = 10f;
-        //transform.position = pos;
-        Debug.Log(" Event Raised");
-        itemObject.Raise();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            isInRange = false;
+        }
+    }
+
+    void Update()
+    {
+        if (isInRange)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                itemObject.Raise();
+                Debug.Log(itemObject + " Event Raised");
+            }
+        }
     }
 }

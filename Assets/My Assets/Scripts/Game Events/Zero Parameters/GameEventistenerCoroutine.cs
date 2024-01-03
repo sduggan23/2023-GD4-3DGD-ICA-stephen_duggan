@@ -4,8 +4,7 @@ using System.Collections;
 
 public class GameEventistenerCoroutine : GameEventListener
 {
-    [SerializeField]
-    private float delay = 5f;
+    [SerializeField] private float delay = 5f;
 
     //[SerializeField]
     //[Tooltip("Specify the game event (scriptable object) which will raise the event")]
