@@ -16,4 +16,4 @@ MonoBehaviour:
   itemDescription: Item harvested from Grass Tufts
   icon: {fileID: 21300000, guid: 46afbb83a47848444bb0cb35c79f5b88, type: 3}
   Value: 1
-  PickupClip: {fileID: 8300000, guid: 2a6b7db6ecd72424caee1ce13e54159b, type: 3}
+  PickupClip: {fileID: 8300000, guid: ad19a2336cdfc2749b78539453883e9d, type: 3}

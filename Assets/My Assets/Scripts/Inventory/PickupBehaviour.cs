@@ -40,6 +40,10 @@ public class PickupBehaviour : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                if (targetObject == null)
+                {
+                    return;
+                }
                 HandlePickup();
             }
         }
@@ -58,13 +62,13 @@ public class PickupBehaviour : MonoBehaviour
             OnPickup?.Raise(itemData);
             //play the sound
             AudioSource.PlayClipAtPoint(itemData.PickupClip,targetObject.gameObject.transform.position);
-            StartCoroutine(DestroyObject());
+            StartCoroutine(RunDelayedEvent());
 
         }
     }
-    private IEnumerator DestroyObject()
+    private IEnumerator RunDelayedEvent()
     {
         yield return new WaitForSeconds(.5f);
-        Destroy(targetObject.gameObject);
+        Destroy(targetObject.gameObject);//, itemData.PickupClip.length);
     }
 }

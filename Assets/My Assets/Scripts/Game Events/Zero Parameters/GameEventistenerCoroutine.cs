@@ -15,7 +15,7 @@ public class GameEventistenerCoroutine : GameEventListener
 
     public override void OnEventRaised()
     {
-        Response.Invoke();
+        //Response.Invoke();
         StartCoroutine(RunDelayedEvent());
     }
 

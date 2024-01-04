@@ -14,11 +14,15 @@ public class InventoryManager : MonoBehaviour
             inventory.Contents[item] = count;
             // inventory.Contents.Add(item, count);
             Debug.Log("Old item added");
+            GameManager.instance.UpdatetemCount();
+            Debug.Log("inventory item count: " + GameManager.instance.itemCount);
         }
         else
         {
             inventory.Contents.Add(item, 1);
             Debug.Log("new item added");
+            GameManager.instance.UpdatetemCount();
+            Debug.Log("inventory item count: " + GameManager.instance.itemCount);
         }
     }
 }

@@ -6,4 +6,9 @@ using UnityEngine;
 public class Inventory : SerializedScriptableObject
 {
     public Dictionary<ItemData, int> Contents;
+
+    public int GetItemDataCount()
+    {
+        return Contents.Keys.Count;
+    }
 }
