@@ -31,7 +31,6 @@ public class InteractBehaviour : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 interaction.Invoke();
-                Debug.Log(interaction + "Interaction Event Raised");
             }
         }
     }

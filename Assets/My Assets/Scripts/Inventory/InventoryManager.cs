@@ -2,27 +2,24 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    [SerializeField]
-    private Inventory inventory;
+    [SerializeField] private Inventory inventory;
 
     public void HandleConsumablePickup(ItemData item)
     {
+        // Check if the item exists in the inventory
         if (inventory.Contents.ContainsKey(item))
         {
             int count = inventory.Contents[item];
-            count++; //since int is value type this is a copy so we need to rewrite in
+            count++;
             inventory.Contents[item] = count;
-            // inventory.Contents.Add(item, count);
-            Debug.Log("Old item added");
+            // Update the GameManager to reflect the change in the item count
             GameManager.instance.UpdatetemCount();
-            Debug.Log("inventory item count: " + GameManager.instance.itemCount);
         }
         else
         {
+            // If the item is not in the inventory, add it
             inventory.Contents.Add(item, 1);
-            Debug.Log("new item added");
             GameManager.instance.UpdatetemCount();
-            Debug.Log("inventory item count: " + GameManager.instance.itemCount);
         }
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     [SerializeField] private GameEvent itemObject;
+    [SerializeField] private GameObject image;
     private bool isInRange;
 
     private void OnTriggerEnter(Collider other)
@@ -13,6 +14,7 @@ public class Item : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isInRange = true;
+            image.SetActive(true);
         }
     }
 
@@ -21,6 +23,7 @@ public class Item : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isInRange = false;
+            image.SetActive(false);
         }
     }
 

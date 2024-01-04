@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PickupBehaviour : MonoBehaviour
 {
+    public GameObject targetObject;
     [SerializeField] private string targetTag = "Item";
     [SerializeField] private ItemDataGameEvent OnPickup;
-    public GameObject targetObject;
     private bool isInRange;
 
     private void Awake()
@@ -18,9 +18,9 @@ public class PickupBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag(targetTag))
         {
-            targetObject = other.gameObject;
+            // Set the collided object as the target object
+            targetObject = other.gameObject; 
             isInRange = true;
-            Debug.Log("Is in Range");
         }
     }
 
@@ -28,9 +28,9 @@ public class PickupBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag(targetTag))
         {
-            targetObject = null;
             isInRange = false;
-            Debug.Log("Is not in Range");
+            // Reset the target object when player exits range
+            targetObject = null;
         }
     }
 
@@ -51,24 +51,26 @@ public class PickupBehaviour : MonoBehaviour
 
     public void HandlePickup()
     {
-        //get item data
+        // Get item data from the target object's ItemDataBehaviour component
         var behaviour = targetObject.gameObject.GetComponent<ItemDataBehaviour>();
 
         if (behaviour != null)
         {
-            Debug.Log("On pickup Event Raised");
+            // Get the item data
             var itemData = behaviour.ItemData;
-            //raise the event
+            // Raise the event, passing the item data
             OnPickup?.Raise(itemData);
-            //play the sound
+            // Play the sound
             AudioSource.PlayClipAtPoint(itemData.PickupClip,targetObject.gameObject.transform.position);
+            // Destroy the target object after a delay
             StartCoroutine(RunDelayedEvent());
 
         }
     }
+    // Coroutine to delay destroying the target object after pickup
     private IEnumerator RunDelayedEvent()
     {
         yield return new WaitForSeconds(.5f);
-        Destroy(targetObject.gameObject);//, itemData.PickupClip.length);
+        Destroy(targetObject.gameObject);
     }
 }
