@@ -1,14 +1,5 @@
 # 2023-GD4-3DGD-ICA-stephen_duggan
 
-## Instructions to open the project locally
-
-- In the top-right corner is a green button that says Code, click on the button.
-- In the dropdown, select Download ZIP. All of the files will begin downloading to your computer, usually in your Downloads folder.
-- Open your Downloads folder and find the ZIP file.
-- Right-click it and choose the option that says Extract All, and then select a folder where you want the files to end up.
-
-## Screencast Link: [Screencast	](https://youtu.be/dHCDyb6Brxs)
-
 ## Screenshots
 
 ![Screenshot #1](https://github.com/sduggan23/2023-GD4-3DGD-ICA-stephen_duggan/assets/93271806/7936964c-fe66-40ee-9199-40d8214eb902)
