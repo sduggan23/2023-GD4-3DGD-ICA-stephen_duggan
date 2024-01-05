@@ -3,10 +3,9 @@
 ## Instructions to open the project locally
 
 - In the top-right corner is a green button that says Code, click on the button.
-- In the dropdown, select Open with Visual Studio. Do not Download ZIP.
-- Clone the repository to your computer and select a folder where you want the files to end up. 
-- Open the folder and find the .sln file.
-- Double-click to open.
+- In the dropdown, select Download ZIP. All of the files will begin downloading to your computer, usually in your Downloads folder.
+- Open your Downloads folder and find the ZIP file.
+- Right-click it and choose the option that says Extract All, and then select a folder where you want the files to end up.
 
 ## Screencast Link: [Screencast	](https://youtu.be/dHCDyb6Brxs)
 
@@ -23,17 +22,32 @@ Fionn mac Cumhaill & The Salmon of Knowledge is a family friendly adventure game
 ## References:
 
 Graphics:
+
 POLYGON Adventure - Low Poly 3D Art by Synty, https://assetstore.unity.com/packages/3d/environments/fantasy/polygon-adventure-low-poly-3d-art-by-synty-80585, Accessed On: 12/2023
+
 POLYGON Vikings - Low Poly 3D Art by Synty, https://assetstore.unity.com/packages/3d/environments/fantasy/polygon-vikings-low-poly-3d-art-by-synty-85664, Accessed On: 12/2023
+
 Simple Sky - Cartoon assets, https://assetstore.unity.com/packages/3d/environments/simple-sky-cartoon-assets-42373, Accessed On: 12/2023
 
 UI:
+
 Inventory Icons, https://icons8.com/icons/set/ui, Accessed On: 12/2023
+
 Inventory Icons, https://icons8.com/icons/set/ui, Accessed On: 12/2023
+
 Celtic Gaelige, https://www.dafont.com/celtic-gaelige.font, Accessed On: 01/24
 
 Audio:
+
 Celtic by christislord, https://freesound.org/people/christislord/sounds/522992/, Accessed On: 01/2024
+
 7 Assorted Sound Effects (Menu, Level Up), https://opengameart.org/content/7-assorted-sound-effects-menu-level-up, Accessed On: 01/24
+
 Simplistic Low Poly Nature, https://assetstore.unity.com/packages/3d/environments/simplistic-low-poly-nature-93894, Accessed On: 01/24
 
+## Software Used
+
+- Unity
+- Blender
+- Photoshop
+- Audacity
